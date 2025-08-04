@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Responsive Layout with Flexbox & Grid</title>
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome for Icons -->
+  <script src="https://kit.fontawesome.com/a2e0ef4f4c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <header>
+    <h1><i class="fas fa-layer-group"></i> Responsive Web Design</h1>
+    <nav class="navbar">
+      <ul>
+        <li><a href="#lists">Lists</a></li>
+        <li><a href="#table">Table</a></li>
+        <li><a href="#media">Media</a></li>
+        <li><a href="#form">Form</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="grid-container">
+    <section id="lists" class="content-box">
+      <h2><i class="fas fa-list-ul"></i> HTML5 Lists</h2>
+      <ul>
+        <li>Flexbox Layout</li>
+        <li>CSS Grid Mastery</li>
+        <li>Responsive Media</li>
+      </ul>
+    </section>
+
+    <section id="table" class="content-box">
+      <h2><i class="fas fa-table"></i> Sample Table</h2>
+      <table>
+        <thead>
+          <tr><th>Device</th><th>Screen Size</th><th>Layout Type</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Desktop</td><td>≥ 1024px</td><td>Grid</td></tr>
+          <tr><td>Tablet</td><td>768–1023px</td><td>Flexbox</td></tr>
+          <tr><td>Mobile</td><td>≤ 767px</td><td>Stacked</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="media" class="content-box">
+      <h2><i class="fas fa-photo-video"></i> Embedded Media</h2>
+      <img src="https://picsum.photos/600/300" alt="Sample Image" />
+      <audio controls>
+        <source src="audio.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+    </section>
+
+    <section id="form" class="content-box form-section">
+      <h2><i class="fas fa-file-signature"></i> HTML5 Form</h2>
+      <form>
+        <fieldset>
+          <legend>Register Here</legend>
+
+          <label for="name">Full Name:</label>
+          <input type="text" id="name" name="name" required minlength="2" placeholder="Your Name" />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required placeholder="you@example.com" />
+
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" required pattern=".{6,}" placeholder="At least 6 characters" />
+
+          <label for="age">Age:</label>
+          <input type="number" id="age" name="age" min="18" max="100" required />
+
+          <label for="color">Favorite Color:</label>
+          <input type="color" id="color" name="color" />
+
+          <label for="bio">Bio:</label>
+          <textarea id="bio" name="bio" rows="4" maxlength="150" placeholder="Tell us about yourself..."></textarea>
+
+          <button type="submit"><i class="fas fa-paper-plane"></i> Submit</button>
+        </fieldset>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Designed by Nyx 💫</p>
+  </footer>
+
+</body>
+</html>
